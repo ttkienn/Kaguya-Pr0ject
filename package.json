@@ -1,0 +1,50 @@
+{
+  "name": "KaguyaBot",
+  "version": "1.0.4",
+  "description": "Đơn giản chỉ là 1 con bot !",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiệu Trung Kiên",
+  "license": "ISC",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "bluebird": "^2.11.0",
+    "chalk": "^5.3.0",
+    "cheerio": "^0.22.0",
+    "chokidar": "^3.5.3",
+    "cli-table3": "^0.6.3",
+    "event": "^1.0.0",
+    "express": "^4.18.2",
+    "figlet": "^1.6.0",
+    "fs-extra": "^11.1.1",
+    "gradient-string": "^2.0.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "https-proxy-agent": "^4.0.0",
+    "jimp": "^0.22.10",
+    "kaguyabotfca": "^10.3.20",
+    "moment-timezone": "^0.5.43",
+    "mongoose": "^7.0.3",
+    "mqtt": "^3.0.0",
+    "nedb": "^1.8.0",
+    "node-notifier": "^10.0.1",
+    "nodemon": "^2.0.22",
+    "npmlog": "^1.2.0",
+    "request": "^2.53.0",
+    "semver": "^7.5.4",
+    "string-similarity": "^4.0.4",
+    "time-sleep": "^1.0.2",
+    "websocket-stream": "^5.5.0",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/fs-extra": "^11.0.1",
+    "@types/string-similarity": "^4.0.0"
+  }
+}
