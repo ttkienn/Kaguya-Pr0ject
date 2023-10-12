@@ -1,21 +1,33 @@
 export default {
-    name: "ping",
-    author: "Kaguya Project",
-    cooldowns: 10,
-    description: "Ping toàn bộ thành viên trong nhóm!",
-    role: "admin",
-    aliases: ["tagall"],
-    execute: async ({ api, event, args }) => {
-      try {
-        const botID = api.getCurrentUserID();
-        const group = await api.getThreadInfo(event.threadID);
-        const listUserID = group.participantIDs.filter((ID) => ID != botID && ID != event.senderID);
-        const body = args.length ? args.join(" ") : "@everyone";
-        const mentions = listUserID.map((idUser) => ({ id: idUser, tag: "", fromIndex: -1 }));
-        return api.sendMessage({ body, mentions }, event.threadID, event.messageID);
-      } catch (e) {
-        console.error(e);
-      }
-    },
-  };
-  
+  name: "ping",
+  author: "Kaguya Project",
+  cooldowns: 10,
+  description: "Ping toàn bộ thành viên trong nhóm!",
+  role: "admin",
+  aliases: ["tagall"],
+  execute: async ({ api, event, args }) => {
+    try {
+      const text = args.join(" ") || "@everyone";
+      const botID = api.getCurrentUserID();
+      const group = await api.getThreadInfo(event.threadID);
+
+      const mentions = group.participantIDs
+        .filter((e) => e !== botID && e !== event.senderID)
+        .reduce((accumulator, e, i) => {
+          accumulator.push({ tag: text[i] || "", id: e });
+          return accumulator;
+        }, []);
+
+      api.sendMessage(
+        {
+          body: mentions.length > text.length ? text.padEnd(mentions.length, " ") : text,
+          mentions,
+        },
+        event.threadID,
+        event.messageID
+      );
+    } catch (e) {
+      console.log(e);
+    }
+  },
+};
