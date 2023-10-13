@@ -19,7 +19,10 @@ To embark on this journey, you'll need NodeJS version 16.x. [Click here to downl
 
 ## FBState
 ### Vi
-Select one of these extensions to obtain your "fbstate.:
+Sử dụng 1 trong số các extensions dưới đây để lấy "fbstate":
+### Eng
+Select one of these extensions to obtain your "fbstate"
+## Extensions
 1. • [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate)
 2. • [KaguyaExtension](https://github.com/ttkienn/KaguyaExtension)
 ### Cloning
