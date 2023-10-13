@@ -10,6 +10,8 @@
 > [ 11/10/2023 - 09:55 AM ] - refactor handler, fix database
 > [ 10/10/2023 - 12:36 PM ] - Fix handler, listen, update database json, refactor
 ```
+# Screenshot
+<img src="https://github.com/ttkienn/Kaguya-Pr0ject/assets/87187870/18f46f52-c419-44e1-a101-c53c220df653">
 
 ## Get Started
 ### Vi
