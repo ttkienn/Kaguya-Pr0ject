@@ -101,6 +101,14 @@ class Kaguya extends EventEmitter {
         reactions: new Map(),
       },
       config: this.currentConfig,
+      setConfig: (newConfig) => {
+        try {
+          Object.assign(this.currentConfig, newConfig);
+          fs.writeFileSync("./setup/config.js", `export default ${JSON.stringify(this.currentConfig, null, 2)};`);
+        } catch (err) {
+          this.emit("system:err", err);
+        }
+      },
     };
     await commandMiddleware();
     await eventMiddleware();
