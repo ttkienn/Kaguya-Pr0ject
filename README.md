@@ -17,6 +17,8 @@ Yêu cầu NodeJS phiên bản 16.x , [Ấn vào để tải xuống.](https://n
 ### Eng
 To embark on this journey, you'll need NodeJS version 16.x. [Click here to download it.](https://nodejs.org/en/download/current/)
 
+## Use [KaguyaExtension](https://github.com/ttkienn/KaguyaExtension) to get the appstate from your Facebook account then paste it on appstate.json
+
 ### Cloning
 ```sh
 # Vietnamese
