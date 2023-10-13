@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Kaguya Bot</h1>
 
-<br>Simple ChatBot Messenger.<br/>
+<br><h4 align="center">Simple ChatBot Messenger.</h4><br/>
 # UPDATE 
 ```sh
 > [ 12/10/2023 - 11:12 AM ] - refactor index.js
