@@ -17,21 +17,22 @@ Yêu cầu NodeJS phiên bản 16.x , [Ấn vào để tải xuống.](https://n
 ### Eng
 To embark on this journey, you'll need NodeJS version 16.x. [Click here to download it.](https://nodejs.org/en/download/current/)
 
-## Use [KaguyaExtension](https://github.com/ttkienn/KaguyaExtension) to get the appstate from your Facebook account then paste it on appstate.json
-
+## FBState
+### Vi
+Select one of these extensions to obtain your "fbstate.:
+1. • [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate)
+2. • [KaguyaExtension](https://github.com/ttkienn/KaguyaExtension)
 ### Cloning
 ```sh
 # Vietnamese
 > git clone https://github.com/ttkienn/Kaguya-Pr0ject
 > cd kaguya-bot
-> Đi tới thư mục setup/credentials.json và điền appstate vào trong!
-> Sau đó đi tới setup/config.js và điền uri mongodb để kết nối tới database!
+> Đi tới thư mục setup/credentials.json và điền fbstate vào trong!
 
 # English
 > git clone https://github.com/ttkienn/Kaguya-Pr0ject
 > cd kaguya-bot
-> Navigate to the setup/credentials.json file and fill in your appstate!
-> Then, proceed to setup/config.js and enter the MongoDB URI to establish a connection with the database!
+> Locate the setup/credentials.json file and input your "fbstate."
 ```
 Install the dependencies:
 ```sh
@@ -48,7 +49,7 @@ Install the dependencies:
 ### Vi:
 Nếu bạn tìm thấy lỗi, hãy liên hệ với tôi và tôi sẽ khắc phục nó
 ### Eng:
-If you stumble upon any issues, don't hesitate to get in touch with me. I'll be sure to resolve them.
+If you encounter any problems, feel free to reach out, and I'll make sure to address them.
 
 ## Gratitude to
       - [MinhHuyDev](https://github.com/MinhHuyDev)
