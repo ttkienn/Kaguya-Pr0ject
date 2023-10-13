@@ -106,35 +106,6 @@ class Kaguya extends EventEmitter {
     await eventMiddleware();
     this.checkVersion();
     this.on("system:run", () => {
-        if ((process.env.PROJECT_DOMAIN || process.env.REPLIT_DB_URL) && config.autoUptime.status) {
-          const intervalId = setInterval(async () => {
-            try {
-              await axios.get(process.env.PROJECT_DOMAIN || `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`);
-              log([
-                {
-                  message: "[ UPTIME ]: ",
-                  color: "green",
-                },
-                {
-                  message: `${process.env.PROJECT_DOMAIN || `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`} `,
-                  color: "white",
-                },
-              ]);
-            } catch (error) {
-              log([
-                {
-                  message: "[ UPTIME ]: ",
-                  color: "red",
-                },
-                {
-                  message: `Error : ${error} `,
-                  color: "white",
-                },
-              ]);
-              clearInterval(intervalId);
-            }
-          }, config.autoUptime.timeSleep);
-        }
       login({ appState: JSON.parse(this.credentials) }, async (err, api) => {
         if (err) {
           this.emit("system:error", err);
