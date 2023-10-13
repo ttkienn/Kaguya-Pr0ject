@@ -4,7 +4,7 @@ class Admin {
   name = "admin";
   author = "Kaguya Project";
   cooldowns = 60;
-  description = "Thêm hoặc xoá admin";
+  description = "Xem, thay đổi danh sách admin của bot!";
   role = "member";
   aliases = [];
 
