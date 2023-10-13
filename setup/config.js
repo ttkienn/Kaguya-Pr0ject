@@ -16,10 +16,6 @@ export default {
             uri: "mongodb://0.0.0.0:27017" // If you're using type mongodb, enter the mongodb uri!
         }
     },
-    autoUptime: {
-      status: true, // Replit, Glitch is recommended to be true
-      timeSleep: 5000 // 5 seconds
-    },
     port: process.env.PORT || 3000,
     mqtt_refresh: 1200000 // Thời gian mqtt sẽ refresh
 };
