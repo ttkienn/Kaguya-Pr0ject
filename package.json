@@ -27,7 +27,7 @@
     "https": "^1.0.0",
     "https-proxy-agent": "^4.0.0",
     "jimp": "^0.22.10",
-    "kaguyabotfca": "^10.3.20",
+    "@trunqkj3n/kaguya": "*",
     "moment-timezone": "^0.5.43",
     "mongoose": "^7.0.3",
     "mqtt": "^3.0.0",
