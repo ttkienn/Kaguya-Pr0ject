@@ -1,4 +1,4 @@
-import login from "kaguyabotfca";
+import login from "@trunqkj3n/kaguya";
 import fs from "fs-extra";
 import { listen } from "./listen/listen.js";
 import { commandMiddleware, eventMiddleware } from "./middleware/index.js";
