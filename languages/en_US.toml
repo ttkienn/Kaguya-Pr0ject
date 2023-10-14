@@ -39,5 +39,5 @@ thread_ban = "Your group has been banned with reason: $1"
 user_ban = "You have been banned with reason: $1"
 command_not_found = "The command you used does not exist!"
 
-# Plugins -> example plugins ping.js
+# plugins -> example plugins help.js
 [plugins]
