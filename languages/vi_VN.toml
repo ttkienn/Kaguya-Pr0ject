@@ -39,5 +39,5 @@ thread_ban = "Nhóm bạn đã bị ban với lý do: $1"
 user_ban = "Bạn đã bị ban với lý do: $1"
 command_not_found = "Lệnh mà bạn sử dụng không tồn tại !"
 
-# plugins -> example plugins ping.js
+# plugins -> example plugins help.js
 [plugins]
