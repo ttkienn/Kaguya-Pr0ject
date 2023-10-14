@@ -10,7 +10,7 @@ export const commandMiddleware = async () => {
           try {
             const commands = (await import(`../commands/${directory}/${command}`)).default;
             if (commands?.onLoad && typeof commands?.onLoad == "function") {
-                await commands.onLoad()
+              await commands.onLoad();
             }
             if (!commands?.name) {
               log([
@@ -19,7 +19,7 @@ export const commandMiddleware = async () => {
                   color: "green",
                 },
                 {
-                  message: `Không thể tải lệnh : ${command} vì không có tên lệnh`,
+                  message: getLang("handler.command_load_error", command, "không có tên lệnh!"),
                   color: "red",
                 },
               ]);
@@ -32,7 +32,7 @@ export const commandMiddleware = async () => {
                   color: "green",
                 },
                 {
-                  message: `Không thể tải lệnh : ${command} vì không có hàm thực thi`,
+                  message: getLang("handler.command_load_error", command, "không có hàm thực thi!"),
                   color: "red",
                 },
               ]);
@@ -45,10 +45,13 @@ export const commandMiddleware = async () => {
                 color: "green",
               },
               {
-                message: `Đã tải thành công lệnh : ./${directory.toLowerCase()}/${commands.name}`,
+                message: getLang("handler.command_load", `/${directory.toLowerCase()}/${commands.name}`),
                 color: "white",
               },
             ]);
+            if (commands.lang && Object.keys(commands.lang).length > 0) {
+              global.language[client.config.language].plugins[commands.name] = commands.lang[client.config.language];
+            }
             if (commands.aliases && Array.isArray(commands.aliases)) {
               for (const alias of commands.aliases) {
                 if (global.client.aliases.has(alias)) {
@@ -58,14 +61,14 @@ export const commandMiddleware = async () => {
                       color: "ocean",
                     },
                     {
-                      message: `Bí danh "${alias}" đã được sử dụng cho lệnh <${global.client.aliases.get(alias)}> nên không thể sử dụng cho lệnh : ${commands.name}`,
+                      message: getLang("handler.command_aliases_exitsts", `<${global.client.aliases.get(alias)}>`, command.name),
                       color: "red",
                     },
                   ]);
                   continue;
                 }
-                if(alias == "" || !alias){
-                  continue
+                if (alias == "" || !alias) {
+                  continue;
                 }
                 global.client.aliases.set(alias, commands.name);
               }
@@ -77,7 +80,7 @@ export const commandMiddleware = async () => {
                 color: "green",
               },
               {
-                message: `Không thể tải lệnh : ${command} vì lỗi : ${error}`,
+                message: getLang("handler.command_load_error", command, error),
                 color: "red",
               },
             ]);
@@ -93,7 +96,7 @@ export const commandMiddleware = async () => {
         color: "green",
       },
       {
-        message: `Không thể tải lệnh do lỗi : ${error}`,
+        message: getLang("handler.error", error),
         color: "red",
       },
     ]);

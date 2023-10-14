@@ -5,9 +5,17 @@ export default {
   description: "Ping toàn bộ thành viên trong nhóm!",
   role: "admin",
   aliases: ["tagall"],
+  lang: {
+    vi_VN: {
+      "text": "Xin chào"
+    },
+    en_US: {
+      "text": "Everyone"
+    }
+  },
   execute: async ({ api, event, args }) => {
     try {
-      const text = args.join(" ") || "@everyone";
+      const text = args.join(" ") || getLang("plugins.ping.text", "ping");
       const botID = api.getCurrentUserID();
       const group = await api.getThreadInfo(event.threadID);
 

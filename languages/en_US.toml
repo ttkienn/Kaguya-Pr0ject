@@ -1,0 +1,43 @@
+# Bot Information
+[info]
+name = "Kaguya Bot"
+version = "Bot is currently in version: $1"
+author = "Thieu Trung Kien"
+title_process = "Kaguya Bot - $1:$2:$3"
+
+# Index
+[index]
+host = "Listening on port: $1"
+invalid_credentials = "Please go to the setup/credentials.json folder and fill in fbstate!"
+exists_credentials = "Found credentials.json file -> Proceed with login!"
+login_success = "Login successful!"
+login_error = "Login failed!"
+listen = "Currently listening for new events!"
+update = "The bot now has a new version $1 -> $2! Please update at github: https://github.com/ttkienn/kaguya-project"
+refresh_mqtt = "Refreshing MQTT in progress!"
+refresh_mqtt_success = "MQTT refresh successful!"
+
+# Database
+[database]
+type = "You have chosen the database type as: $1"
+connection_success = "Connected to the database successfully!"
+connection_failed = "Unable to connect to the database!"
+create_user = "Successfully created data for the user: $1"
+create_thread = "Successfully created data for the group: $1"
+
+# Handler
+[handler]
+command_load = "Successfully loaded command: $1"
+command_load_error = "Unable to load command: $1 due to error: $2"
+event_load = "Successfully loaded event: $1"
+event_load_error = "Unable to load event: $1 due to error: $2"
+command_noPermission = "You do not have permission to use this command!"
+command_cooldowns = "You need to wait an additional $1 seconds to use this command!"
+command_aliases_exists = "Alias $1 is already used for command $2, so it cannot be loaded for command $3!"
+error = "An error occurred: $1"
+thread_ban = "Your group has been banned with reason: $1"
+user_ban = "You have been banned with reason: $1"
+command_not_found = "The command you used does not exist!"
+
+# Plugins -> example plugins ping.js
+[plugins]

@@ -1,0 +1,43 @@
+# Thông tin của bot
+[info]
+name = "Kaguya Bot"
+version = "Bot đang ở phiên bản: $1"
+author = "Thiệu Trung Kiên"
+title_process = "Kaguya Bot - $1:$2:$3"
+
+# Index
+[index]
+host = "Listening on port : $1"
+invaild_credentials = "Vui lòng đến thư mục setup/credentials.json và điền fbstate vào trong!"
+exitsts_credentials = "Đã tìm thấy file credentials.json -> Tiến hành đăng nhập!"
+login_success = "Đăng nhập thành công!"
+login_error = "Đăng nhập thất bại!"
+listen = "Đang lắng nghe các sự kiện mới!"
+update = "Bot hiện tại đã có phiên bản mới $1 -> $2 ! Vui lòng cập nhật tại github : https://github.com/ttkienn/kaguya-project"
+refresh_mqtt = "Đang tiến hành refresh mqtt!"
+refresh_mqtt_success = "Đã refresh mqtt thành công!"
+
+# database
+[database]
+type = "Bạn đã chọn dữ liệu database là : $1"
+connection_success = "Đã kết nối tới database thành công!"
+connection_failed = "Không thể kết nối tới database!"
+create_user = "Đã tạo thành công dữ liệu cho user : $1"
+create_thread = "Đã tạo thành công dữ liệu cho nhóm : $1"
+
+# handler
+[handler]
+command_load = "Đã tải thành công lệnh: $1"
+command_load_error = "Không thể tải lệnh: $1 vì lỗi $2"
+event_load = "Đã tải thành công sự kiện: $1"
+event_load_error = "Không thể tải sự kiện: $1 vì lỗi $2"
+command_noPermission = "Bạn không có quyền để sử dụng lệnh này!"
+command_cooldowns = "Bạn cần chờ thêm $1 giây để sử dụng lệnh này!"
+command_aliases_exitsts = "Bí danh $1 đã được sử dụng cho lệnh $2 nên không thể load cho lệnh $3 !"
+error = "Đã có lỗi xảy ra : $1"
+thread_ban = "Nhóm bạn đã bị ban với lý do: $1"
+user_ban = "Bạn đã bị ban với lý do: $1"
+command_not_found = "Lệnh mà bạn sử dụng không tồn tại !"
+
+# plugins -> example plugins ping.js
+[plugins]

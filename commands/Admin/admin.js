@@ -4,7 +4,7 @@ class Admin {
   name = "admin";
   author = "Kaguya Project";
   cooldowns = 60;
-  description = "Xem, thay đổi danh sách admin của bot!";
+  description = "Thêm hoặc xoá admin";
   role = "member";
   aliases = [];
 
@@ -13,7 +13,7 @@ class Admin {
       global.client.__proto__.setConfig = function (newConfig) {
         try {
           Object.assign(global.client.config, newConfig);
-          fs.writeFileSync("./setup/config.js", `export default ${JSON.stringify(global.client.config, null, 2)};`);
+          fs.writeFileSync("./setup/config.js", `export default ${JSON.stringify(global.client.c, null, 2)};`);
         } catch (err) {
           this.emit("system:err", err);
         }

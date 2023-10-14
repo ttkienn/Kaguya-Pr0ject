@@ -34,14 +34,14 @@ export class CommandHandler {
       }
 
       if (banUser?.status && !this.config.ADMIN_IDS.includes(event.senderID)) {
-        return api.sendMessage(`Bạn đã bị ban với lý do: ${banUser.reason}`, threadID);
+        return api.sendMessage(getLang("handler.user_ban", banUser.reason), threadID);
       }
 
       if (isGroup) {
         const banThread = getThread?.data?.data?.banned;
 
         if (banThread?.status && !this.config.ADMIN_IDS.includes(event.senderID)) {
-          return api.sendMessage(`Nhóm đã bị ban với lý do: ${banThread.reason}`, threadID);
+          return api.sendMessage(getLang("handler.thread_ban", banThread.reason), threadID);
         }
       }
 
@@ -49,7 +49,7 @@ export class CommandHandler {
       const commandName = cmd.toLowerCase();
       const command = this.commands.get(commandName) || this.commands.get(this.aliases.get(commandName));
       if (!command) {
-        return api.sendMessage("Command không tồn tại", threadID, messageID);
+        return api.sendMessage(getLang("handler.command_not_found"), threadID, messageID);
       }
 
       if (!this.cooldowns.has(command.name)) {
@@ -65,7 +65,7 @@ export class CommandHandler {
           const expTime = timeStamps.get(senderID) + cooldownAmount;
           if (currentTime < expTime) {
             const timeLeft = (expTime - currentTime) / 1000;
-            return api.sendMessage(`Vui lòng chờ ${timeLeft.toFixed(1)}s để sử dụng ${prefix}${command.name}`, threadID, messageID);
+            return api.sendMessage(getLang("handler.command_cooldowns", timeLeft.toFixed(1)), threadID, messageID);
           }
         }
 
@@ -78,7 +78,7 @@ export class CommandHandler {
       const { adminIDs: threadAdminIDs } = await api.getThreadInfo(threadID);
 
       if ((command.role === "admin" || command.role === "owner") && !threadAdminIDs.includes(senderID) && !this.config.ADMIN_IDS.includes(senderID)) {
-        return api.sendMessage("Bạn không có quyền sử dụng lệnh này!", threadID, messageID);
+        return api.sendMessage(getLang("handler.command_noPermission"), threadID, messageID);
       }
 
       command.execute({ ...this.arguments, args });
@@ -125,7 +125,7 @@ export class CommandHandler {
       }, reply.expires * 1000);
     }
 
-    command.onReply && await command.onReply({ ...this.arguments, reply });
+    command.onReply && (await command.onReply({ ...this.arguments, reply }));
   }
 
   async handleReaction() {
@@ -141,6 +141,6 @@ export class CommandHandler {
     if (!command) {
       return await this.arguments.api.sendMessage("Missing data to execute handle reaction", this.arguments.event.threadID, messageID);
     }
-    command.onReaction && await command.onReaction({ ...this.arguments, reaction });
+    command.onReaction && (await command.onReaction({ ...this.arguments, reaction }));
   }
 }

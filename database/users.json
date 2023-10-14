@@ -1,1 +1,209 @@
-[]
+[
+  {
+    "uid": "100056992160405",
+    "data": {
+      "money": 0,
+      "exp": 11,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Thiệu Trung Kiên",
+      "firstName": "Kiên",
+      "vanity": "ThieuTrungKi3n",
+      "avatar": "https://graph.facebook.com/100056992160405/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "friend",
+      "profileUrl": "https://www.facebook.com/ThieuTrungKi3n",
+      "isFriend": true,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100080694111402",
+    "data": {
+      "money": 0,
+      "exp": 2,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "𝑇ℎ𝑖𝑒𝑢 𝑇𝑟𝑢𝑛𝑔 𝐾𝑖𝑒𝑛",
+      "firstName": "𝐾𝑖𝑒𝑛",
+      "vanity": "",
+      "avatar": "https://graph.facebook.com/100080694111402/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "user",
+      "profileUrl": "https://www.facebook.com/profile.php?id=100080694111402",
+      "isFriend": false,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100075401250019",
+    "data": {
+      "money": 0,
+      "exp": 0,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Nguyễn Văn Huy",
+      "firstName": "Huy",
+      "vanity": "HuyKaiser.profile",
+      "avatar": "https://graph.facebook.com/100075401250019/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "friend",
+      "profileUrl": "https://www.facebook.com/HuyKaiser.profile",
+      "isFriend": true,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100081540866375",
+    "data": {
+      "money": 0,
+      "exp": 1,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Trần Bảo Tín",
+      "firstName": "Trần",
+      "vanity": "",
+      "avatar": "https://graph.facebook.com/100081540866375/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "user",
+      "profileUrl": "https://www.facebook.com/profile.php?id=100081540866375",
+      "isFriend": false,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100002268728586",
+    "data": {
+      "money": 0,
+      "exp": 0,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Nguyễn Văn Huy ✅❤️💛💚💚💙💜🤎🖤🤍♥️🔰✔️1️⃣1️⃣3️⃣🇻🇳 ✓√",
+      "firstName": "Huy ✅❤️💛💚💚💙💜🤎🖤🤍♥️🔰✔️1️⃣1️⃣3️⃣🇻🇳 ✓√",
+      "vanity": "",
+      "avatar": "https://graph.facebook.com/100002268728586/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "user",
+      "profileUrl": "https://www.facebook.com/profile.php?id=100002268728586",
+      "isFriend": false,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100063050334248",
+    "data": {
+      "money": 0,
+      "exp": 0,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Phạm Quốc Cường",
+      "firstName": "Cường",
+      "vanity": "pqc2304",
+      "avatar": "https://graph.facebook.com/100063050334248/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "user",
+      "profileUrl": "https://www.facebook.com/pqc2304",
+      "isFriend": false,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100089258343808",
+    "data": {
+      "money": 0,
+      "exp": 0,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Duy Tuan ☑",
+      "firstName": "Bạn",
+      "vanity": "ng.ditn",
+      "avatar": "https://graph.facebook.com/100089258343808/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "user",
+      "profileUrl": "https://www.facebook.com/ng.ditn",
+      "isFriend": false,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100060894693968",
+    "data": {
+      "money": 0,
+      "exp": 0,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Lê Minh Tiến",
+      "firstName": "Tiến",
+      "vanity": "minhtien.0703",
+      "avatar": "https://graph.facebook.com/100060894693968/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "friend",
+      "profileUrl": "https://www.facebook.com/minhtien.0703",
+      "isFriend": true,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  },
+  {
+    "uid": "100053894225187",
+    "data": {
+      "money": 0,
+      "exp": 0,
+      "level": 0,
+      "banned": {
+        "status": false,
+        "reason": "",
+        "time": 0
+      },
+      "name": "Minh Hoàng",
+      "firstName": "Minh",
+      "vanity": "romanov.yamano",
+      "avatar": "https://graph.facebook.com/100053894225187/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662",
+      "type": "user",
+      "profileUrl": "https://www.facebook.com/romanov.yamano",
+      "isFriend": false,
+      "isBirthday": false,
+      "gender": "Nam",
+      "other": {}
+    }
+  }
+]

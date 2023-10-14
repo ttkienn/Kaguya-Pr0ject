@@ -19,7 +19,7 @@ import fs from "fs";
               color: "red",
             },
             {
-              message: "Không thể kết nối đến database",
+              message: getLang("database.connection_failed"),
               color: "white",
             },
           ]);
@@ -37,6 +37,19 @@ import fs from "fs";
         createIfNotExists("./database/threads.json");
       }
       break;
+    default: {
+      log([
+        {
+          message: "[ DATABASE ]: ",
+          color: "red",
+        },
+        {
+          message: getLang("database.connection_failed"),
+          color: "white",
+        },
+      ]);
+      process.exit(0)
+    }
   }
   log([
     {
@@ -44,7 +57,7 @@ import fs from "fs";
       color: "green",
     },
     {
-      message: "Đã kết nối đến database",
+      message: getLang("database.connection_success"),
       color: "white",
     },
   ]);

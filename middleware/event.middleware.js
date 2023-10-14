@@ -18,7 +18,7 @@ export const eventMiddleware = async () => {
             color: "yellow",
           },
           {
-            message: `Không thể tải sự kiện : ${event} vì không có tên sự kiện`,
+            message: getLang("handler.event_load_error" , event, "không có tên sự kiện!"),
             color: "red",
           },
         ]);
@@ -31,7 +31,7 @@ export const eventMiddleware = async () => {
             color: "yellow",
           },
           {
-            message: `Không thể tải sự kiện : ${event} vì không có hàm thực thi`,
+            message: getLang("handler.event_load_error" , event, "không có tên hàm thực thi!"),
             color: "red",
           },
         ]);
@@ -44,7 +44,7 @@ export const eventMiddleware = async () => {
           color: "yellow",
         },
         {
-          message: `Đã tải thành công sự kiện : ./event/${events.name}`,
+          message: getLang("handler.event_load", `/event/${events.name}`),
           color: "white",
         },
       ]); 
@@ -56,7 +56,7 @@ export const eventMiddleware = async () => {
         color: "yellow",
       },
       {
-        message: `Không thể tải sự kiện do lỗi : ${error}`,
+        message: getLang("handler.error", error),
         color: "red",
       },
     ]);
