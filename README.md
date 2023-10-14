@@ -6,6 +6,7 @@
 <br><h4 align="center">Simple ChatBot Messenger.</h4><br/>
 # UPDATE 
 ```sh
+> [ 14/10/2023 - 11:12 AM ] - Language Feature Update, Edit the Language in config.js, and Add Languages in the languages Folder
 > [ 12/10/2023 - 11:12 AM ] - refactor index.js
 > [ 11/10/2023 - 09:55 AM ] - refactor handler, fix database
 > [ 10/10/2023 - 12:36 PM ] - Fix handler, listen, update database json, refactor
