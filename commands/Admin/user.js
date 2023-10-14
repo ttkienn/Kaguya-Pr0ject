@@ -1,6 +1,6 @@
 export default {
   name: "user",
-  author: "Thiệu Trung Kiên",
+  author: "Kaguya Project",
   cooldowns: 0,
   description: "Cấm người dùng sử dụng bot",
   role: "owner",
