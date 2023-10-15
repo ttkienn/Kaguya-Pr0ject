@@ -16,7 +16,6 @@ class Kaguya extends EventEmitter {
   constructor() {
     super();
     global.getLang = getLang;
-    console.log(global)
     this.on("system:error", (err) => {
       log([
         {
