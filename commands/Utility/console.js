@@ -1,7 +1,7 @@
 import Table from 'cli-table3';
 import chalk from 'chalk';
 
-class AutoSeen {
+class Console {
   name = 'console';
   author = 'Kaguya Project';
   cooldowns = 60;
@@ -46,4 +46,4 @@ class AutoSeen {
   async execute() {}
 }
 
-export default new AutoSeen();
+export default new Console();
