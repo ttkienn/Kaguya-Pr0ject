@@ -29,18 +29,8 @@ class Kaguya extends EventEmitter {
       ]);
       process.exit(1);
     });
-    process.on("unhandledRejection", (err) => {
-      log([
-        {
-          message: "[ ERROR ]: ",
-          color: "red",
-        },
-        {
-          message: getLang('handler.error', err),
-          color: "white",
-        },
-      ]);
-    });
+    process.on("unhandledRejection", err => console.log(err));
+    process.on("uncaughtException", err => console.log(err));
     this.currentConfig = config;
     this.credentials = fs.readFileSync("./setup/credentials.json");
     this.package = JSON.parse(fs.readFileSync("./package.json"));
