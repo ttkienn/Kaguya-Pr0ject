@@ -20,7 +20,7 @@ export default {
             kaguya.reply("Đã đổi prefix nhóm của bạn sang : " + args[0]);
           });
         } else {
-          kaguya.reply(`Prefix hiện tại của nhóm bạn là : ${getThread.data?.data?.prefix || "không có"}`);
+          kaguya.reply(`Prefix hiện tại của nhóm bạn là : ${getThread.data?.data?.prefix || client.config.prefix}`);
         }
       },
       false: () => kaguya.reply("Không tìm thấy thông tin nhóm bạn trong database"),
