@@ -1,6 +1,6 @@
 {
   "name": "KaguyaBot",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Đơn giản chỉ là 1 con bot !",
   "main": "index.js",
   "type": "module",
