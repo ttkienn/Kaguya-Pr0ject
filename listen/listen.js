@@ -39,7 +39,7 @@ const listen = async ({ api, event }) => {
     global.kaguya = utils({ api, event });
 
     const handler = createHandler(api, event, User, Thread, Economy, Exp);
-    await handler.handleEvent();
+    handler.handleEvent();
 
     switch (type) {
       case "message":
