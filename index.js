@@ -1,5 +1,6 @@
 /**
- * Author: Thiệu Trung Kiên (https://github.com/ttkienn)
+ * Author: Thiệu Trung Kiên
+ * Contact: https://www.facebook.com/ThieuTrungKi3n
  * Do not modify the authorship; it is crucial. Unauthorized changes may result in a permanent ban.
  * 
  * English: This code is the project's core; altering it jeopardizes stability and continuous, free development.
