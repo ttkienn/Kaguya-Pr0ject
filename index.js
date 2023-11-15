@@ -1,3 +1,14 @@
+/**
+ * Author: Thiệu Trung Kiên (https://github.com/ttkienn)
+ * Do not modify the authorship; it is crucial. Unauthorized changes may result in a permanent ban.
+ * 
+ * English: This code is the project's core; altering it jeopardizes stability and continuous, free development.
+ * 
+ * Vietnamese: Mã nguồn này là cốt lõi của dự án; sửa đổi đe dọa tính ổn định và sự phát triển miễn phí.
+ * 
+ * Thank you for choosing and using our project!
+ */
+
 import login from "@trunqkj3n/kaguya";
 import fs from "fs-extra";
 import { listen } from "./listen/listen.js";
