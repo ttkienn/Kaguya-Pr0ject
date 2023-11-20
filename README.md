@@ -58,8 +58,8 @@ Nếu bạn tìm thấy lỗi, hãy liên hệ với tôi và tôi sẽ khắc p
 If you encounter any problems, feel free to reach out, and I'll make sure to address them.
 
 ## Thanks to
-- [MinhHuyDev](https://github.com/MinhHuyDev)
 - [ttkienn](https://github.com/ttkienn)
+- [MinhHuyDev](https://github.com/MinhHuyDev)
 
 ## Contributors
 <table>
