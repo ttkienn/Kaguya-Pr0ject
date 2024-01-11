@@ -24,7 +24,7 @@ class Sing {
       if (!isYouTube) {
         const {
           data: { results = [] },
-        } = await axios.get(encodeURI(`http://8.219.10.246:8080/youtube/search?query=${KeywordsOrLink}`));
+        } = await axios.get(encodeURI(`https://ditmemaykkkk.com/api/youtube/search?query=${KeywordsOrLink}`));
         if (!results.length) {
           return kaguya.reply(`Không tìm thấy kết quả nào cho từ khoá : ${KeywordsOrLink}`);
         }
