@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon .",
+    "update": "node update.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thiệu Trung Kiên",
