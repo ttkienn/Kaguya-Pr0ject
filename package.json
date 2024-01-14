@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@trunqkj3n/kaguya": "*",
+    "archiver": "^6.0.1",
     "blessed": "^0.1.81",
     "bluebird": "^2.11.0",
     "chalk": "^5.3.0",
