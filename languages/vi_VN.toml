@@ -18,7 +18,7 @@ exitsts_credentials = "Đã tìm thấy file credentials.json -> Tiến hành đ
 login_success = "Đăng nhập thành công!"
 login_error = "Đăng nhập thất bại!"
 listen = "Đang lắng nghe các sự kiện mới!"
-update = "Bot hiện tại đã có phiên bản mới $1 -> $2 ! Vui lòng cập nhật tại github : https://github.com/ttkienn/kaguya-project"
+update = "Bot hiện tại đã có phiên bản mới $1 -> $2 ! Vui lòng gõ lệnh 'npm run update' để update phiên bản mới nhất !"
 refresh_mqtt = "Đang tiến hành refresh mqtt!"
 refresh_mqtt_success = "Đã refresh mqtt thành công!"
 
