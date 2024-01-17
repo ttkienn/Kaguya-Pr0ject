@@ -25,5 +25,6 @@ export default {
   },
 
   "port": process.env.PORT || 3000,  // Port on which the bot will run
-  "mqtt_refresh": 1200000  // MQTT refresh interval
+  "mqtt_refresh": 1200000,  // MQTT refresh interval
+  "autoRestart": 30 // 30 minutes
 };
