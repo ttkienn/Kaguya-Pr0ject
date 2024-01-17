@@ -19,7 +19,6 @@ import sleep from "time-sleep";
 import { log, notifer } from "./logger/index.js";
 import gradient from "gradient-string";
 import("./middleware/database.middleware.js");
-import("./app.js");
 import config from "./setup/config.js";
 import EventEmitter from "events";
 import axios from "axios";
