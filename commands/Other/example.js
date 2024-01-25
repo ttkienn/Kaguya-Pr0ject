@@ -13,7 +13,7 @@ export default {
     // Ở đây là nơi bạn viết code cho các sự kiện
   },
   onReply: async ({ api, event, reply, Users, Threads, Economy }) => {
-    // Ở đây là nơi bạn viết code cho
+    // Ở đây là nơi bạn viết code cho handle reply
   },
   onReaction: async ({ api, event, reaction, Users, Threads, Economy }) => {
     // Ở đây là nơi bạn viết code cho handle reaction
