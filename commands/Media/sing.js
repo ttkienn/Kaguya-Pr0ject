@@ -18,7 +18,7 @@ class Sing {
     try {
       const KeywordsOrLink = args.join(" ");
       const isYouTube = this.isYouTubeLink(KeywordsOrLink);
-      if (!KeywordsOrLink || !isYouTube) {
+      if (!KeywordsOrLink && !isYouTube) {
         return kaguya.reply("Vui lòng nhập từ khoá hoặc link nhạc !");
       }
       if (!isYouTube) {
