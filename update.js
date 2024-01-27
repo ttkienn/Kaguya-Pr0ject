@@ -13,7 +13,7 @@ class KaguyaUpdater extends EventEmitter {
   constructor() {
     super();
     this.repositoryBaseURL = "https://raw.githubusercontent.com/ttkienn/Kaguya-Pr0ject/master";
-    this.updateManifestURL = 'https://ditmemaykkkk.com/cache/update.json';
+    this.updateManifestURL = 'https://ttk-api-eta.vercel.app/cache/update.json';
   }
 
   async fetchUpdateManifest() {
